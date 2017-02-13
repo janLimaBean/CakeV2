@@ -8,11 +8,11 @@
 
 	<h1>Study guideline</h1>
 	<ul><em>Additional Resources to read</em>
-		<li><a href="https://book.cakephp.org/2.0/en/getting-started/cakephp-conventions.html">Cake Naming Conventions</a>
+		<li><a href="https://book.cakephp.org/2.0/en/models/associations-linking-models-together.html">Associations: Linking Models Together</a>
 		</li>
 	</ul>
 	<ul><em>Course files</em>
-		<li><a href="https://book.cakephp.org/2.0/en/tutorials-and-examples/blog/part-two.html">Create a Post Model</a></li>
+		<li><a href="https://book.cakephp.org/2.0/en/tutorials-and-examples/blog/part-two.html">Adding Posts</a></li>
 	</ul>
 </body>
 </html>

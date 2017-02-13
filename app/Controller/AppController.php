@@ -5,8 +5,6 @@
  * This file is application-wide controller file. You can put all
  * application-wide controller-related methods here.
  *
- * PHP 5
- *
  * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
  * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
  *
@@ -20,8 +18,8 @@
  * @since         CakePHP(tm) v 0.2.9
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
+
 App::uses('Controller', 'Controller');
-App::uses('CrudControllerTrait', 'Crud.Lib');
 
 /**
  * Application Controller
@@ -33,25 +31,4 @@ App::uses('CrudControllerTrait', 'Crud.Lib');
  * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
-
-	use CrudControllerTrait;
-
-/**
- * List of global controller components
- *
- * @var array
- */
-	public $components = [
-		'RequestHandler',
-		'Session',
-		'Crud.Crud' => [
-			'listeners' => [
-				'Crud.Api',
-				'Crud.ApiPagination',
-				'Crud.ApiQueryLog'
-			]
-		],
-		'Paginator' => ['settings' => ['paramType' => 'querystring', 'limit' => 30]]
-	];
-
 }

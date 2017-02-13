@@ -1,30 +1,34 @@
 {
-  "name": "friendsofcake/app-template",
-  "description": "An empty CakePHP 2.5 application",
-  "type": "project",
-  "keywords" : [],
-  "homepage" : "http://cakephp.org",
-  "license" : "MIT",
-  "require" : {
-    "php" : ">=5.4",
-    "composer/installers" : "~1.0",
-    "cakephp/cakephp" : "2.*",
-    "friendsofcake/crud" : "3.*",
-    "josegonzalez/dotenv": "1.*",
-    "ad7six/dsn": "0.3.*"
-  },
-  "require-dev": {
-    "cakephp/debug_kit" : "2.2.*"
-  },
-  "minimum-stability": "dev",
-  "config": {
-    "preferred-install": "dist"
-  },
-  "extra": {
-    "heroku": {
-      "framework": "cakephp2",
-      "document-root": "webroot",
-      "index-document": "index.php"
-    }
-  }
+	"name": "cakephp/cakephp",
+	"description": "The CakePHP framework",
+	"type": "library",
+	"keywords": ["framework"],
+	"homepage": "http://cakephp.org",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "CakePHP Community",
+			"homepage": "https://github.com/cakephp/cakephp/graphs/contributors"
+		}
+	],
+	"support": {
+		"issues": "https://github.com/cakephp/cakephp/issues",
+		"forum": "http://stackoverflow.com/tags/cakephp",
+		"irc": "irc://irc.freenode.org/cakephp",
+		"source": "https://github.com/cakephp/cakephp"
+	},
+	"require": {
+		"php": ">=5.3.0",
+		"ext-mcrypt": "*"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "3.7.*",
+		"cakephp/cakephp-codesniffer": "^1.0.0"
+	},
+	"config": {
+		"vendor-dir": "vendors/"
+	},
+	"bin": [
+		"lib/Cake/Console/cake"
+	]
 }
