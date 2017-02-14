@@ -12,7 +12,7 @@
 		</li>
 	</ul>
 	<ul><em>Course files</em>
-		<li><a href="https://book.cakephp.org/2.0/en/tutorials-and-examples/blog/part-two.html">Adding Posts</a></li>
+		<li><a href="https://book.cakephp.org/2.0/en/tutorials-and-examples/blog/part-two.html">Editing Posts</a></li>
 	</ul>
 </body>
 </html>
