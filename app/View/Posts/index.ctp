@@ -31,6 +31,14 @@ array('controller' => 'posts', 'action' => 'view', $post['Post']['id'])); ?>
                     'Edit',
                     array('action' => 'edit', $post['Post']['id'])
                 );
+//Using postLink() will create a link that uses JavaScript to do a POST request to delete our post. 
+//Allowing content to be deleted using GET requests is dangerous, as web crawlers could accidentally
+//delete all your content.
+                echo $this->Form->postLink(
+                    ' Delete',
+                    array('action' => 'delete', $post['Post']['id']),
+                    array('confirm' => 'Are you sure?')
+                );
             ?>
         </td>
     </tr>
